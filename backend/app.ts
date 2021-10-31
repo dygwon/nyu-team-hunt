@@ -38,7 +38,7 @@ const getLocationsWithTimezones = (req: Request, res: Response, next: NextFuncti
     }
   ];
 
-  res.status(200).json(locations);
+  res.status(200).json(locations).end();
 };
 
 app.get('/timezones', getLocationsWithTimezones);
